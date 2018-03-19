@@ -1,0 +1,39 @@
+{
+    "name": "mattmezza/phava-chat-backend",
+    "description": "A simple chat backend written in phava",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Chat\\": "src/chat/",
+            "Chat\\API\\": "src/api/",
+            "Chat\\API\\Exception\\": "src/api/exceptions/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\Chat\\Unit\\": "tests/unit/",
+            "Test\\Chat\\API\\": "tests/api/"
+        }
+    },
+    "require": {
+        "slim/slim": "^3.9",
+        "illuminate/support": "^5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matteo Merola",
+            "email": "mattmezza@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "migrate:test": "php ./data/migrate.php",
+        "migrate": "php ./data/migrate.php"
+    }
+}

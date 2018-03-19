@@ -1,0 +1,10 @@
+<phpunit bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Chat Component Test">
+            <directory suffix=".php">tests/unit</directory>
+        </testsuite>
+        <testsuite name="API Test">
+            <directory suffix=".php">tests/api</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
