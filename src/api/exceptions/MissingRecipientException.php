@@ -1,5 +1,5 @@
 <?php
-declare(sctict_types=1);
+declare(strict_types=1);
 
 namespace Chat\API\Exception;
 
