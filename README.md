@@ -1,6 +1,11 @@
 phava-chat-backend
 =======
 
+# Design rationale
+
+Since OO programming is not that much suitable for relational DBs, I decoupled the model object representation from the relational DB logic using the Data Access Object pattern.
+# Install and usage
+
 Development
 - `export CHAT_DB="sqlite:/Users/Matt/Development/phava-chat-backend/tests/data/test.db"`
 - `composer install`
